@@ -9,6 +9,7 @@
         <version>1.0.0</version>
     </parent>
 
+    <name>wps weboffice springboot autoconfig</name>
     <artifactId>wps-weboffice-springboot-autoconfig</artifactId>
     <packaging>jar</packaging>
 

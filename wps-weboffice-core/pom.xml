@@ -8,9 +8,10 @@
         <artifactId>wps-weboffice</artifactId>
         <version>1.0.0</version>
     </parent>
-    <packaging>jar</packaging>
 
+    <name>wps weboffice core</name>
     <artifactId>wps-weboffice-core</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -9,6 +9,7 @@
         <version>1.0.0</version>
     </parent>
 
+    <name>wps weboffice springboot v3 starter</name>
     <artifactId>wps-weboffice-springboot-v3-starter</artifactId>
     <packaging>jar</packaging>
 
@@ -16,6 +17,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <wps-weboffice.version>1.0.0</wps-weboffice.version>
+        <spring-boot.version>3.2.12</spring-boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
