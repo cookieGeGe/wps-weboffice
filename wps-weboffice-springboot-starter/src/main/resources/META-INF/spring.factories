@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+io.github.cookiegege.wpsOffice.autoconfigure.WpsAutoConfiguration,\
+io.github.cookiegege.wpsOffice.config.WpsWebAutoConfiguration
