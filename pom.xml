@@ -35,6 +35,7 @@
 
     <modules>
         <module>wps-weboffice-bom</module>
+        <module>wps-weboffice-dependencies</module>
         <module>wps-weboffice-core</module>
         <module>wps-weboffice-springboot-autoconfig</module>
         <module>wps-weboffice-springboot-starter</module>
@@ -77,34 +78,10 @@
         <dependencies>
             <dependency>
                 <groupId>io.github.cookiegege</groupId>
-                <artifactId>wps-weboffice-bom</artifactId>
+                <artifactId>wps-weboffice-dependencies</artifactId>
                 <version>${revision}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.18.38</version>
-            </dependency>
-
-            <dependency>
-                <groupId>cn.hutool</groupId>
-                <artifactId>hutool-all</artifactId>
-                <version>5.8.32</version>
-            </dependency>
-
-            <dependency>
-                <groupId>tools.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>3.0.3</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.fasterxml.jackson.datatype</groupId>
-                <artifactId>jackson-datatype-jsr310</artifactId>
-                <version>2.19.2</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

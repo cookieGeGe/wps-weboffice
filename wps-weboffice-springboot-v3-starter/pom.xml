@@ -14,6 +14,9 @@
     <artifactId>wps-weboffice-springboot-v3-starter</artifactId>
     <packaging>jar</packaging>
 
+    <properties>
+        <springboot3.version>3.2.12</springboot3.version>
+    </properties>
 
 
     <dependencies>
@@ -35,6 +38,30 @@
             <artifactId>wps-weboffice-springboot-autoconfig</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>jakarta.annotation</groupId>
+            <artifactId>jakarta.annotation-api</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${springboot3.version}</version>
+            </dependency>
+
+            <!-- config (optional) -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${springboot3.version}</version>
+                <optional>true</optional>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>
