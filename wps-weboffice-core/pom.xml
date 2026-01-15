@@ -5,8 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.github.cookiegege</groupId>
-        <artifactId>wps-weboffice</artifactId>
-        <version>1.0.0</version>
+        <artifactId>wps-weboffice-parent</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <name>wps weboffice core</name>
@@ -14,10 +15,6 @@
     <packaging>jar</packaging>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <wps-weboffice.version>1.0.0</wps-weboffice.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>

@@ -9,14 +9,6 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.deploy.skip>true</maven.deploy.skip>
-        <wps-weboffice.version>1.0.0</wps-weboffice.version>
-    </properties>
-
     <modules>
         <module>wps-weboffice-demo</module>
         <module>wps-weboffice-demo-v3</module>

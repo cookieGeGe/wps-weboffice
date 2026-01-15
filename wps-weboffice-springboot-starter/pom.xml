@@ -5,32 +5,34 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>io.github.cookiegege</groupId>
-        <artifactId>wps-weboffice</artifactId>
-        <version>1.0.0</version>
+        <artifactId>wps-weboffice-parent</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <name>wps weboffice springboot starter</name>
     <artifactId>wps-weboffice-springboot-starter</artifactId>
     <packaging>jar</packaging>
 
-    <properties>
-        <wps-weboffice.version>1.0.0</wps-weboffice.version>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <spring-boot.version>2.7.14</spring-boot.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>io.github.cookiegege</groupId>
-            <artifactId>wps-weboffice-springboot-autoconfig</artifactId>
-            <version>${wps-weboffice.version}</version>
-        </dependency>
 
+        <!-- spring-boot-starter-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- config (optional) -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.cookiegege</groupId>
+            <artifactId>wps-weboffice-springboot-autoconfig</artifactId>
         </dependency>
 
     </dependencies>
